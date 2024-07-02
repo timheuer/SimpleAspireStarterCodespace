@@ -24,5 +24,5 @@
       ]
     }
   },
-  "postCreateCommand": "dotnet workload update && dotnet workload install aspire && dotnet restore"
+  "postCreateCommand": "sudo dotnet workload update && sudo dotnet workload install aspire && dotnet restore"
 }
