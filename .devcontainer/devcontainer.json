@@ -17,7 +17,8 @@
       "version": "none",
       "dotnetRuntimeVersions": "8.0",
       "aspNetCoreRuntimeVersions": "8.0"
-    }
+    },
+    "ghcr.io/nikiforovall/devcontainer-features/dotnet-aspire:1": {}
   },
   "customizations": {
     "vscode": {
@@ -27,5 +28,5 @@
       ]
     }
   },
-  "postCreateCommand": "sudo dotnet workload update && sudo dotnet workload install aspire && dotnet restore"
+  "postCreateCommand": "dotnet restore && dotnet dev-certs https"
 }
